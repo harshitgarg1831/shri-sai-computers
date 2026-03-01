@@ -3,17 +3,17 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h1 className="text-5xl font-black text-slate-900 mb-6 tracking-tight">About Shri Sai Computers</h1>
-                    <p className="text-xl text-slate-600 mb-6 leading-relaxed">Founded in 2004, Shri Sai Computers has been providing premium computing solutions and expert repair services for over a decade. We believe in quality, transparency, and customer satisfaction.</p>
-                    <p className="text-lg text-slate-600 mb-8 leading-relaxed">Our team consists of certified hardware technicians and software experts dedicated to solving your technical problems efficiently. Whether you need a high-end gaming rig or a simple screen replacement, we are your trusted local partner.</p>
+                    <h1 className="text-5xl font-black text-[lab(35_-16.57_-8.25)] mb-6 tracking-tight">About Shri Sai Computers</h1>
+                    <p className="text-xl text-[lab(35_-16.57_-8.25)] mb-6 leading-relaxed">Founded in 2004, Shri Sai Computers has been providing premium computing solutions and expert repair services for over a decade. We believe in quality, transparency, and customer satisfaction.</p>
+                    <p className="text-lg text-[lab(35_-16.57_-8.25)] mb-8 leading-relaxed">Our team consists of certified hardware technicians and software experts dedicated to solving your technical problems efficiently. Whether you need a high-end gaming rig or a simple screen replacement, we are your trusted local partner.</p>
                     <div className="grid grid-cols-2 gap-6 border-t pt-8">
                         <div>
                             <p className="text-4xl font-extrabold text-blue-600 mb-2">10k+</p>
-                            <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">Happy Customers</p>
+                            <p className="text-sm font-bold text-[lab(35_-16.57_-8.25)] uppercase tracking-widest">Happy Customers</p>
                         </div>
                         <div>
                             <p className="text-4xl font-extrabold text-blue-600 mb-2">20+</p>
-                            <p className="text-sm font-bold text-slate-500 uppercase tracking-widest">Years Experience</p>
+                            <p className="text-sm font-bold text-[lab(35_-16.57_-8.25)] uppercase tracking-widest">Years Experience</p>
                         </div>
                     </div>
                 </div>

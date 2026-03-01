@@ -15,21 +15,21 @@ export default function Navbar() {
                             <span className="font-extrabold text-lg sm:text-2xl text-[#008B8B] tracking-tight truncate max-w-[200px] sm:max-w-none">Shri Sai Computers</span>
                         </Link>
                         <div className="hidden sm:ml-8 sm:flex sm:space-x-8">
-                            <Link href="/" className="border-transparent text-gray-500 hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Home</Link>
-                            <Link href="/products" className="border-transparent text-gray-500 hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Products</Link>
-                            <Link href="/services" className="border-transparent text-gray-500 hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Services</Link>
-                            <Link href="/about" className="border-transparent text-gray-500 hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">About</Link>
-                            <Link href="/contact" className="border-transparent text-gray-500 hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Contact</Link>
+                            <Link href="/" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Home</Link>
+                            <Link href="/products" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Products</Link>
+                            <Link href="/services" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Services</Link>
+                            <Link href="/about" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">About</Link>
+                            <Link href="/contact" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Contact</Link>
                         </div>
                     </div>
                     <div className="hidden sm:ml-6 sm:flex sm:items-center">
-                        <Link href="/admin/login" className="text-gray-400 hover:text-blue-600 text-sm font-medium transition-colors">Admin</Link>
+                        <Link href="/admin/login" className="text-[lab(35_-16.57_-8.25)] hover:text-blue-600 text-sm font-medium transition-colors">Admin</Link>
                     </div>
                     {/* Mobile menu button */}
                     <div className="flex items-center sm:hidden">
                         <button
                             type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-[lab(35_-16.57_-8.25)] hover:text-[lab(35_-16.57_-8.25)] hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
                             aria-expanded="false"
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                         >
@@ -52,15 +52,15 @@ export default function Navbar() {
             {isMobileMenuOpen && (
                 <div className="sm:hidden pb-3">
                     <div className="pt-2 pb-3 space-y-1">
-                        <Link href="/" className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
-                        <Link href="/products" className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
-                        <Link href="/services" className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
-                        <Link href="/about" className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
-                        <Link href="/contact" className="text-gray-700 hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+                        <Link href="/" className="text-[lab(35_-16.57_-8.25)] hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Home</Link>
+                        <Link href="/products" className="text-[lab(35_-16.57_-8.25)] hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Products</Link>
+                        <Link href="/services" className="text-[lab(35_-16.57_-8.25)] hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Services</Link>
+                        <Link href="/about" className="text-[lab(35_-16.57_-8.25)] hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
+                        <Link href="/contact" className="text-[lab(35_-16.57_-8.25)] hover:bg-blue-50 hover:text-blue-600 block pl-3 pr-4 py-2 border-l-4 border-transparent hover:border-blue-500 text-base font-medium" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
                     </div>
                     <div className="pt-4 pb-1 border-t border-gray-100">
                         <div className="space-y-1">
-                            <Link href="/admin/login" className="block px-4 py-2 text-base font-medium text-gray-500 hover:text-blue-600 hover:bg-gray-50" onClick={() => setIsMobileMenuOpen(false)}>Admin Login</Link>
+                            <Link href="/admin/login" className="block px-4 py-2 text-base font-medium text-[lab(35_-16.57_-8.25)] hover:text-blue-600 hover:bg-gray-50" onClick={() => setIsMobileMenuOpen(false)}>Admin Login</Link>
                         </div>
                     </div>
                 </div>

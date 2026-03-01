@@ -9,12 +9,12 @@ export default async function AdminRepairs() {
     return (
         <div>
             <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-extrabold text-slate-900">Repair Requests</h1>
+                <h1 className="text-3xl font-extrabold text-[lab(35_-16.57_-8.25)]">Repair Requests</h1>
             </div>
 
             <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <table className="w-full text-left">
-                    <thead className="bg-slate-50 border-b border-slate-100 text-slate-500 font-medium">
+                    <thead className="bg-slate-50 border-b border-slate-100 text-[lab(35_-16.57_-8.25)] font-medium">
                         <tr>
                             <th className="p-4">Date</th>
                             <th className="p-4">Customer</th>
@@ -27,15 +27,15 @@ export default async function AdminRepairs() {
                     <tbody>
                         {repairs.length === 0 ? (
                             <tr>
-                                <td colSpan={6} className="p-8 text-center text-slate-500">No repair requests yet.</td>
+                                <td colSpan={6} className="p-8 text-center text-[lab(35_-16.57_-8.25)]">No repair requests yet.</td>
                             </tr>
                         ) : (
                             repairs.map((repair: any) => (
                                 <tr key={repair._id} className="border-b border-slate-50 hover:bg-slate-50">
-                                    <td className="p-4 text-slate-600 text-sm">{new Date(repair.createdAt).toLocaleDateString()}</td>
-                                    <td className="p-4 font-semibold text-slate-900">{repair.name}<br /><span className="text-sm font-normal text-slate-500">{repair.phone}</span></td>
-                                    <td className="p-4 text-slate-600 font-medium">{repair.deviceType}</td>
-                                    <td className="p-4 text-slate-600 truncate max-w-xs">{repair.issueDescription}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)] text-sm">{new Date(repair.createdAt).toLocaleDateString()}</td>
+                                    <td className="p-4 font-semibold text-[lab(35_-16.57_-8.25)]">{repair.name}<br /><span className="text-sm font-normal text-[lab(35_-16.57_-8.25)]">{repair.phone}</span></td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)] font-medium">{repair.deviceType}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)] truncate max-w-xs">{repair.issueDescription}</td>
                                     <td className="p-4">
                                         <span className={`px-3 py-1 rounded-full text-xs font-bold ${repair.status === 'Pending' ? 'bg-amber-100 text-amber-700' :
                                             repair.status === 'In Progress' ? 'bg-blue-100 text-blue-700' :
@@ -48,7 +48,7 @@ export default async function AdminRepairs() {
                                             "use server";
                                             await updateRepairStatus(repair._id.toString(), formData.get("status") as string);
                                         }} className="flex items-center space-x-2">
-                                            <select name="status" defaultValue={repair.status} className="text-sm border rounded p-1 bg-white text-slate-700">
+                                            <select name="status" defaultValue={repair.status} className="text-sm border rounded p-1 bg-white text-[lab(35_-16.57_-8.25)]">
                                                 <option value="Pending">Pending</option>
                                                 <option value="In Progress">In Progress</option>
                                                 <option value="Completed">Completed</option>

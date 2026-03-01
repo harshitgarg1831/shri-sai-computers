@@ -9,12 +9,12 @@ export default async function AdminProducts() {
     return (
         <div>
             <div className="flex justify-between items-center mb-8">
-                <h1 className="text-3xl font-extrabold text-slate-900">Products</h1>
+                <h1 className="text-3xl font-extrabold text-[lab(35_-16.57_-8.25)]">Products</h1>
             </div>
 
             <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden mb-12 p-8">
                 <h2 className="text-xl font-bold mb-4">Add New Product</h2>
-                <form action={addProduct} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700 ">
+                <form action={addProduct} className="grid grid-cols-1 md:grid-cols-2 gap-4 text-[lab(35_-16.57_-8.25)] ">
                     <input name="name" required placeholder="Product Name" className="border p-3 rounded" />
                     <input name="brand" required placeholder="Brand (e.g., Apple, Dell, Lenovo)" className="border p-3 rounded" />
                     <select name="category" required className="border p-3 rounded bg-white" defaultValue="Laptops">
@@ -37,7 +37,7 @@ export default async function AdminProducts() {
 
             <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <table className="w-full text-left">
-                    <thead className="bg-slate-50 border-b border-slate-100 text-slate-500 font-medium">
+                    <thead className="bg-slate-50 border-b border-slate-100 text-[lab(35_-16.57_-8.25)] font-medium">
                         <tr>
                             <th className="p-4">Name</th>
                             <th className="p-4">Brand</th>
@@ -50,23 +50,23 @@ export default async function AdminProducts() {
                     <tbody>
                         {products.length === 0 ? (
                             <tr>
-                                <td colSpan={6} className="p-8 text-center text-slate-500">No products found. Add your first product.</td>
+                                <td colSpan={6} className="p-8 text-center text-[lab(35_-16.57_-8.25)]">No products found. Add your first product.</td>
                             </tr>
                         ) : (
                             products.map((product: any) => (
                                 <tr key={product._id} className="border-b border-slate-50 hover:bg-slate-50">
-                                    <td className="p-4 font-semibold text-slate-900">{product.name}</td>
-                                    <td className="p-4 text-slate-600">{product.brand || 'Unbranded'}</td>
-                                    <td className="p-4 text-slate-600">{product.category}</td>
-                                    <td className="p-4 text-slate-600">₹{product.price}</td>
-                                    <td className="p-4 text-slate-600">
+                                    <td className="p-4 font-semibold text-[lab(35_-16.57_-8.25)]">{product.name}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)]">{product.brand || 'Unbranded'}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)]">{product.category}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)]">₹{product.price}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)]">
                                         <div className="flex items-center space-x-2">
                                             <form action={updateProductStock.bind(null, product._id.toString(), product.stock, -1)}>
-                                                <button type="submit" disabled={product.stock <= 0} className="w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-bold text-slate-600 disabled:opacity-50">-</button>
+                                                <button type="submit" disabled={product.stock <= 0} className="w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-bold text-[lab(35_-16.57_-8.25)] disabled:opacity-50">-</button>
                                             </form>
                                             <span className="w-8 text-center font-medium">{product.stock}</span>
                                             <form action={updateProductStock.bind(null, product._id.toString(), product.stock, 1)}>
-                                                <button type="submit" className="w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-bold text-slate-600">+</button>
+                                                <button type="submit" className="w-6 h-6 rounded-full bg-slate-100 hover:bg-slate-200 flex items-center justify-center font-bold text-[lab(35_-16.57_-8.25)]">+</button>
                                             </form>
                                         </div>
                                     </td>

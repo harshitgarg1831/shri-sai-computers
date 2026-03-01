@@ -34,17 +34,17 @@ export default function ProductEnquiryForm({ productId }: { productId: string })
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Name</label>
-                    <input required name="name" value={formData.name} onChange={handleChange} type="text" className="w-full border  text-gray-700 border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none" placeholder="Your Name" />
+                    <label className="block text-sm font-semibold text-[lab(35_-16.57_-8.25)] mb-2">Name</label>
+                    <input required name="name" value={formData.name} onChange={handleChange} type="text" className="w-full border  text-[lab(35_-16.57_-8.25)] border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none" placeholder="Your Name" />
                 </div>
                 <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
-                    <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none  text-gray-700" placeholder="Your Phone Number" />
+                    <label className="block text-sm font-semibold text-[lab(35_-16.57_-8.25)] mb-2">Phone</label>
+                    <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none  text-[lab(35_-16.57_-8.25)]" placeholder="Your Phone Number" />
                 </div>
             </div>
             <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                <textarea required name="message" value={formData.message} onChange={handleChange} className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none text-gray-700" rows={4} placeholder="I am interested in buying..."></textarea>
+                <label className="block text-sm font-semibold text-[lab(35_-16.57_-8.25)] mb-2">Message</label>
+                <textarea required name="message" value={formData.message} onChange={handleChange} className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none text-[lab(35_-16.57_-8.25)]" rows={4} placeholder="I am interested in buying..."></textarea>
             </div>
             <button disabled={status === 'loading'} type="submit" className="w-full bg-blue-600 text-white font-bold py-4 rounded-lg hover:bg-blue-700 transition shadow-md shadow-blue-500/20 text-lg disabled:opacity-50">
                 {status === 'loading' ? 'Sending...' : 'Send Enquiry'}

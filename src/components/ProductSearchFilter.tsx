@@ -38,7 +38,7 @@ export default function ProductSearchFilter() {
                 placeholder="Search products..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="border border-gray-200 rounded-lg p-2 px-4 text-sm text-gray-700 bg-white w-full sm:w-64 focus:ring-2 focus:ring-blue-500 outline-none transition"
+                className="border border-gray-200 rounded-lg p-2 px-4 text-sm text-[lab(35_-16.57_-8.25)] bg-white w-full sm:w-64 focus:ring-2 focus:ring-blue-500 outline-none transition"
             />
             <select
                 value={category}
@@ -47,7 +47,7 @@ export default function ProductSearchFilter() {
                     setCategory(newCat);
                     router.push(`/products?${createQueryString('category', newCat)}`);
                 }}
-                className="border border-gray-200 rounded-lg p-2 px-4 text-sm text-gray-700 bg-white focus:ring-2 focus:ring-blue-500 outline-none transition cursor-pointer"
+                className="border border-gray-200 rounded-lg p-2 px-4 text-sm text-[lab(35_-16.57_-8.25)] bg-white focus:ring-2 focus:ring-blue-500 outline-none transition cursor-pointer"
             >
                 <option value="All Categories">All Categories</option>
                 <option value="Laptops">Laptops</option>

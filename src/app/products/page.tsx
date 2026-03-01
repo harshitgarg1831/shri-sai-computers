@@ -30,15 +30,15 @@ export default async function ProductsPage({ searchParams }: { searchParams: Pro
     return (
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10">
-                <h1 className="text-4xl font-extrabold text-slate-900 tracking-tight">All Products</h1>
+                <h1 className="text-4xl font-extrabold text-[lab(35_-16.57_-8.25)] tracking-tight">All Products</h1>
                 <ProductSearchFilter />
             </div>
 
             {products.length === 0 && (
                 <div className="text-center py-20 bg-gray-50 rounded-2xl border border-dashed border-gray-300">
                     <div className="text-4xl mb-4">🔍</div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">No products found</h3>
-                    <p className="text-slate-500">Try adjusting your search or category filter to find what you're looking for.</p>
+                    <h3 className="text-xl font-bold text-[lab(35_-16.57_-8.25)] mb-2">No products found</h3>
+                    <p className="text-[lab(35_-16.57_-8.25)]">Try adjusting your search or category filter to find what you're looking for.</p>
                 </div>
             )}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -52,11 +52,11 @@ export default async function ProductsPage({ searchParams }: { searchParams: Pro
                                 </div>
                             </div>
                             <div className="p-5">
-                                <p className="text-xs font-bold text-slate-400 tracking-wider uppercase mb-1">{product.brand || 'Unbranded'}</p>
-                                <h3 className="font-bold text-slate-900 mb-2 truncate" title={product.name}>{product.name}</h3>
+                                <p className="text-xs font-bold text-[lab(35_-16.57_-8.25)] tracking-wider uppercase mb-1">{product.brand || 'Unbranded'}</p>
+                                <h3 className="font-bold text-[lab(35_-16.57_-8.25)] mb-2 truncate" title={product.name}>{product.name}</h3>
                                 <div className="flex justify-between items-center mt-4">
                                     <p className="text-xl font-extrabold text-blue-600">₹{product.price}</p>
-                                    <span className="text-sm font-medium text-slate-500 group-hover:text-blue-600 transition">View Details →</span>
+                                    <span className="text-sm font-medium text-[lab(35_-16.57_-8.25)] group-hover:text-blue-600 transition">View Details →</span>
                                 </div>
                             </div>
                         </div>

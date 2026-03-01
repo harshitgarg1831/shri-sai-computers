@@ -5,9 +5,9 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0">
                         <span className="text-xl font-bold text-blue-600">Shri Sai Computers</span>
-                        <p className="text-sm text-gray-500 mt-1">Computers, Accessories, & Quality Repairs.</p>
+                        <p className="text-sm text-[lab(35_-16.57_-8.25)] mt-1">Computers, Accessories, & Quality Repairs.</p>
                     </div>
-                    <p className="text-center text-gray-400 text-sm">
+                    <p className="text-center text-[lab(35_-16.57_-8.25)] text-sm">
                         &copy; {new Date().getFullYear()} Shri Sai Computers. All rights reserved.
                     </p>
                 </div>

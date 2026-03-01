@@ -8,11 +8,11 @@ export default async function AdminInquiries() {
 
     return (
         <div>
-            <h1 className="text-3xl font-extrabold text-slate-900 mb-8">Inquiries</h1>
+            <h1 className="text-3xl font-extrabold text-[lab(35_-16.57_-8.25)] mb-8">Inquiries</h1>
 
             <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
                 <table className="w-full text-left">
-                    <thead className="bg-slate-50 border-b border-slate-100 text-slate-500 font-medium">
+                    <thead className="bg-slate-50 border-b border-slate-100 text-[lab(35_-16.57_-8.25)] font-medium">
                         <tr>
                             <th className="p-4">Date</th>
                             <th className="p-4">Name</th>
@@ -25,15 +25,15 @@ export default async function AdminInquiries() {
                     <tbody>
                         {inquiries.length === 0 ? (
                             <tr>
-                                <td colSpan={6} className="p-8 text-center text-slate-500">No inquiries yet.</td>
+                                <td colSpan={6} className="p-8 text-center text-[lab(35_-16.57_-8.25)]">No inquiries yet.</td>
                             </tr>
                         ) : (
                             inquiries.map((inquiry: any) => (
                                 <tr key={inquiry._id} className="border-b border-slate-50 hover:bg-slate-50">
-                                    <td className="p-4 text-slate-600 text-sm">{new Date(inquiry.createdAt).toLocaleDateString()}</td>
-                                    <td className="p-4 font-semibold text-slate-900">{inquiry.name}</td>
-                                    <td className="p-4 text-slate-600">{inquiry.phone}</td>
-                                    <td className="p-4 text-slate-600 truncate max-w-xs">{inquiry.message}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)] text-sm">{new Date(inquiry.createdAt).toLocaleDateString()}</td>
+                                    <td className="p-4 font-semibold text-[lab(35_-16.57_-8.25)]">{inquiry.name}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)]">{inquiry.phone}</td>
+                                    <td className="p-4 text-[lab(35_-16.57_-8.25)] truncate max-w-xs">{inquiry.message}</td>
                                     <td className="p-4">
                                         <span className={`px-3 py-1 rounded-full text-xs font-bold ${inquiry.status === 'Pending' ? 'bg-amber-100 text-amber-700' : 'bg-green-100 text-green-700'}`}>
                                             {inquiry.status}
