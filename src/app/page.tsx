@@ -15,7 +15,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/products" className="bg-blue-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-blue-500 transition shadow-lg shadow-blue-500/30">
-              Shop Now
+              Explore Products
             </Link>
             <Link href="/services" className="bg-slate-800 text-white px-8 py-4 rounded-full font-bold text-lg border border-slate-700 hover:bg-slate-700 transition shadow-lg">
               Book a Repair

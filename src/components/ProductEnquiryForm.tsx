@@ -35,11 +35,11 @@ export default function ProductEnquiryForm({ productId }: { productId: string })
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                     <label className="block text-sm font-semibold text-[lab(35_-16.57_-8.25)] mb-2">Name</label>
-                    <input required name="name" value={formData.name} onChange={handleChange} type="text" className="w-full border  text-[lab(35_-16.57_-8.25)] border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none" placeholder="Your Name" />
+                    <input required name="name" value={formData.name} onChange={handleChange} type="text" pattern="^[A-Za-z ]+$" title="Name should only contain letters and spaces" className="w-full border  text-[lab(35_-16.57_-8.25)] border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none" placeholder="Your Name" />
                 </div>
                 <div>
                     <label className="block text-sm font-semibold text-[lab(35_-16.57_-8.25)] mb-2">Phone</label>
-                    <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none  text-[lab(35_-16.57_-8.25)]" placeholder="Your Phone Number" />
+                    <input required name="phone" value={formData.phone} onChange={handleChange} type="tel" pattern="[0-9]{10}" minLength={10} maxLength={10} inputMode="numeric" title="Please enter exactly 10 digits for your mobile number" className="w-full border border-gray-300 rounded-lg shadow-sm p-3 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition outline-none  text-[lab(35_-16.57_-8.25)]" placeholder="Your 10-Digit Phone Number" />
                 </div>
             </div>
             <div>
