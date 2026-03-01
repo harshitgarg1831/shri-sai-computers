@@ -50,7 +50,7 @@ export default function ServicesPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start relative z-10">
                 <div>
-                    <h2 className="text-3xl font-extrabold text-gray-900 mb-8 pb-4">What We Repair</h2>
+                    <h2 className="text-3xl font-extrabold text-[lab(35_-16.57_-8.25)] mb-8 pb-4">What We Repair</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div className="group bg-white p-6 rounded-3xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-gray-100 hover:border-blue-100 transition duration-500 relative overflow-hidden cursor-pointer">
                             <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-gradient-to-br from-blue-50 to-blue-100 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition duration-500"></div>

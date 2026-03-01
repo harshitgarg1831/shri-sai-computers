@@ -9,7 +9,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div className="space-y-8 relative z-10">
                     <span className="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-sm font-semibold tracking-wider shadow-sm">OUR STORY</span>
-                    <h1 className="text-5xl lg:text-6xl font-black text-gray-900 tracking-tight leading-tight drop-shadow-sm">About <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">Shri Sai Computers</span></h1>
+                    <h1 className="text-5xl lg:text-6xl font-black text-[lab(35_-16.57_-8.25)] tracking-tight leading-tight drop-shadow-sm">About <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">Shri Sai Computers</span></h1>
                     <div className="w-20 h-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full"></div>
                     <p className="text-xl text-[lab(35_-16.57_-8.25)] leading-relaxed font-medium">Founded in 2004, Shri Sai Computers has been providing premium computing solutions and expert repair services for over a decade. We believe in quality, transparency, and customer satisfaction.</p>
                     <p className="text-lg text-[lab(35_-16.57_-8.25)] leading-relaxed">Our team consists of certified hardware technicians and software experts dedicated to solving your technical problems efficiently. Whether you need a high-end gaming rig or a simple screen replacement, we are your trusted local partner.</p>
