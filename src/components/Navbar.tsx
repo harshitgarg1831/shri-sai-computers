@@ -11,8 +11,8 @@ export default function Navbar() {
                 <div className="flex justify-between h-20">
                     <div className="flex items-center">
                         <Link href="/" className="flex-shrink-0 flex items-center gap-3 group mr-4 sm:mr-8">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKvuf0RkbWvDapGPXhzQJdJHrK02xU0VZwA&s" alt="Shri Sai Computers Logo" className="h-10 sm:h-12 w-auto rounded-lg object-contain shadow-sm group-hover:scale-105 transition-transform duration-300" />
-                            <span className="font-extrabold text-lg sm:text-xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 tracking-tight truncate max-w-[150px] sm:max-w-none">Shri Sai Computers</span>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGKvuf0RkbWvDapGPXhzQJdJHrK02xU0VZwA&s" alt="Shri Sai Computers Logo" className="h-8 sm:h-12 w-auto rounded-lg object-contain shadow-sm group-hover:scale-105 transition-transform duration-300" />
+                            <span className="font-extrabold text-sm sm:text-xl lg:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600 tracking-tight whitespace-nowrap">Shri Sai Computers</span>
                         </Link>
                         <div className="hidden lg:ml-8 lg:flex lg:space-x-8">
                             <Link href="/" className="border-transparent text-[lab(35_-16.57_-8.25)] hover:border-blue-600 hover:text-blue-600 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium transition-colors">Home</Link>
