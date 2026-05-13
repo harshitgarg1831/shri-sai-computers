@@ -4,6 +4,7 @@ import connectToDatabase from "@/lib/db";
 import Product from "@/models/Product";
 import Inquiry from "@/models/Inquiry";
 import RepairRequest from "@/models/RepairRequest";
+import Order from "@/models/Order";
 import { revalidatePath } from "next/cache";
 
 export async function deleteProduct(id: string) {
@@ -75,4 +76,11 @@ export async function updateRepairStatus(id: string, status: string) {
     await connectToDatabase();
     await RepairRequest.findByIdAndUpdate(id, { status });
     revalidatePath("/admin/repairs");
+}
+
+export async function updateOrderStatus(id: string, status: string) {
+    await connectToDatabase();
+    await Order.findByIdAndUpdate(id, { status });
+    revalidatePath("/admin/orders");
+    revalidatePath("/my-orders");
 }

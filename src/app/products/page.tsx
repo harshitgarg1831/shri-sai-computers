@@ -2,6 +2,7 @@ import Link from 'next/link';
 import connectToDatabase from '@/lib/db';
 import Product from '@/models/Product';
 import ProductSearchFilter from '@/components/ProductSearchFilter';
+import AddToCartButton from '@/components/AddToCartButton';
 
 export default async function ProductsPage({ searchParams }: { searchParams: Promise<{ [key: string]: string | undefined }> }) {
     await connectToDatabase();
@@ -68,11 +69,14 @@ export default async function ProductsPage({ searchParams }: { searchParams: Pro
                                     <p className="text-xs font-bold text-gray-400 tracking-wider uppercase mb-2">{product.brand || 'Unbranded'}</p>
                                     <h3 className="font-bold text-lg text-gray-900 mb-2 line-clamp-2 leading-snug group-hover:text-blue-600 transition duration-300" title={product.name}>{product.name}</h3>
                                 </div>
-                                <div className="flex justify-between items-end mt-6 pt-4 border-t border-gray-50">
+                                <div className="flex justify-between items-center mt-6 pt-4 border-t border-gray-50">
                                     <p className="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">₹{product.price}</p>
-                                    <span className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-sm">
-                                        <svg className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-                                    </span>
+                                    <div className="flex items-center">
+                                        <span className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-sm">
+                                            <svg className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                        </span>
+                                        <AddToCartButton product={JSON.parse(JSON.stringify(product))} />
+                                    </div>
                                 </div>
                             </div>
                         </div>

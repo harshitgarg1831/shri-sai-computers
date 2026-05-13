@@ -5,9 +5,13 @@ import LoginButton from "@/components/LoginButton";
 
 export default async function AdminLogin() {
     const session = await getServerSession(authOptions);
+    const adminEmail = process.env.ADMIN_EMAIL?.trim();
 
-    if (session) {
+    if (session && session.user?.email === adminEmail) {
         redirect("/admin/dashboard");
+    } else if (session) {
+        // If a normal user accidentally hits admin login, redirect them to home instead of infinite looping
+        redirect("/");
     }
 
     return (

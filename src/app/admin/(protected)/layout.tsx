@@ -7,9 +7,12 @@ import LogoutButton from "@/components/LogoutButton";
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
     const session = await getServerSession(authOptions);
 
-    if (!session || !session.user) {
+    const adminEmail = process.env.ADMIN_EMAIL?.trim();
+
+    if (!session || !session.user || session.user.email !== adminEmail) {
         redirect("/admin/login");
     }
+
 
     return (
         <div className="flex bg-slate-50 min-h-[calc(100vh-5rem)] relative">
@@ -34,9 +37,17 @@ export default async function AdminLayout({ children }: { children: React.ReactN
                         <span className="text-xl md:hidden">✉️</span>
                         <span className="hidden md:block">Inquiries</span>
                     </Link>
+                    <Link href="/admin/orders" className="flex items-center justify-center md:justify-start px-2 md:px-4 py-3 rounded-lg hover:bg-slate-800 hover:text-blue-400 transition font-medium group text-white">
+                        <span className="text-xl md:hidden block">🛍️ <span className="text-xs block mt-1">Orders</span></span>
+                        <span className="hidden md:block text-teal-400 font-bold ml-1">🛍️ Orders</span>
+                    </Link>
                     <Link href="/admin/repairs" className="flex items-center justify-center md:justify-start px-2 md:px-4 py-3 rounded-lg hover:bg-slate-800 hover:text-blue-400 transition font-medium group">
                         <span className="text-xl md:hidden">🔧</span>
                         <span className="hidden md:block">Repairs</span>
+                    </Link>
+                    <Link href="/admin/certificates" className="flex items-center justify-center md:justify-start px-2 md:px-4 py-3 rounded-lg hover:bg-slate-800 hover:text-blue-400 transition font-medium group">
+                        <span className="text-xl md:hidden">🎓</span>
+                        <span className="hidden md:block">Certificates</span>
                     </Link>
                 </nav>
                 <div className="p-2 md:p-4 border-t border-slate-800 mt-auto flex justify-center md:justify-start">
